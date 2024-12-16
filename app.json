@@ -1,11 +1,12 @@
 {
   "expo": {
-    "name": "liberacao-veiculo",
+    "name": "Liberação Veículos",
     "slug": "liberacao-veiculo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "br.com.liberacao-veiculo",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -18,10 +19,23 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "br.com.liberacaoveiculo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "c7212fac-e711-41fb-95f4-0bab15defae0"
+      }
     }
   }
 }
